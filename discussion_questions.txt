@@ -1,0 +1,146 @@
+PART1:
+
+Recursion
+
+1. In your own words, what is recursion?
+Function that calls itself
+
+2. Why is it necessary to have a base case?
+Because the recursive function should at some point stop and return a result.
+
+Graphs
+
+1. What is a graph?
+Graph is a chart that shows nodes and relations between them
+
+2. How is a graph different from a tree?
+Tree has one way directional relationship without any loop
+Graphs can have directional or non-directional relationship and it can contain loops
+
+3. Give an example of something that would be good to model with a graph.
+Relations between novel characters
+
+
+Data structure performance
+
+Python List(Array)
+Index: O(1)
+Search: O(n)
+Add-R: O(1)
+Add-L: O(n)
+Pop-L: O(n)
+Pop-R: O(1)
+
+Linked List
+Index: O(n)
+Search: O(n)
+Add-R: O(1)
+Add-L: O(1)
+Pop-L: O(1)
+Pop-R: O(n)
+
+Doubly-Linked List
+Index: O(n)
+Search: O(n)
+Add-R: O(1)
+Add-L: O(1)
+Pop-L: O(1)
+Pop-R: O(1)
+
+Queue(as Array)
+Index: O(1)
+Search: O(n)
+Add-R: O(1)
+(?)Add-L: O(1)
+*Pop-L: O(n)
+Pop-R: O(1)
+
+Queue(as LL or DLL)
+Index: O(n)
+Search: O(n)
+Add-R: O(1)
+Add-L: O(1)
+Pop-L: O(1)
+Pop-R: O(n)
+
+Stack(as Array, LL, or DLL)
+Index: O(n)
+Search: O(n)
+Add-R: O(1)
+Add-L: O(n)
+Pop-L: O(n)
+Pop-R: O(1)
+
+Deque(as DLL)
+Index: O(n)
+Search: O(n)
+Add-R: O(1)
+Add-L: O(1)
+Pop-L: O(1)
+Pop-R: O(1)
+
+
+Runtime and Memory
+
+Dictionary(Hash Map)
+Get: O(1)
+Add: O(1)
+Delete: O(1)
+*Iterate: O(n log n)
+Memory: **
+
+Set(Hash Map)
+Get: O(1)
+Add: O(1)
+Delete: O(1)
+*Iterate: O(n log n)
+Memory: **
+
+Binary Search Tree
+Get: O(log n)
+Add: O(log n)
+Delete: O(log n)
+Iterate: O(n)
+Memory: *
+
+Tree
+Get: O(n)
+*Add: O(1)
+*Delete: O(1)
+Iterate: O(n)
+Memory: *
+
+
+Sorting
+
+Describe in words how the Bubble Sort algorithm works.
+1. compare item in index 0 with index 1
+2. keep smaller in index 0, and put larger in index 1
+3. compare item in index prev(0)+1=1 with index prev(1)+1 =2
+4. keep smaller in index 1, and put larger in index 2
+5. repeat 3, 4 by updating the prev(#) to the one added
+6. When the end of the sequence is reached, go back to the beginning
+7. repeat 1~5 untill the number that moved to the end on last sort is reached. Leave the numbers that float to the end untouched.
+8. When all the numbers are "untouchable", the sorting ends.
+
+Describe in words how the Merge Sort algorithm works.
+1. Separate all items in sequence into sequences with one item
+2. pair them two by two to compare. smaller moves L, larger, R
+3. Join the twos into one ordered sequences with two items
+4. Pair the sequences with two items.
+5. order each of 2item array pairs by comparing items in array 1 with2
+6. join them into an array of 4items
+7. repeate the procedure from 4~6 by comparig ordered lists and joining (the number of items in a sequence will grow *2 per join)
+8. the sorting ends when all items are joined into a list
+
+Describe in words how the Quick Sort algorithm works.
+1. pick a number in a sequence by the algorithm of your choice
+2. iterate through all other items in the sequence, and put the item that is smaller than the chosen number to left of the chosen one, and larger on to the right
+3. within the left side of the chosen one, repeat 1(choice2)~2(iter)
+4. within the right side of the chosen one, repeat 1(choice3)~2(iter)
+5. within the four segments separated by choice 1,2,3 reapeat
+6. keep separating and comparing like 3~5
+7. The sorting ends when there is nothing to compare. 
+
+
+
