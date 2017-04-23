@@ -51,7 +51,7 @@ Queue(as Array)
 Index: O(1)
 Search: O(n)
 Add-R: O(1)
-(?)Add-L: O(1)
+Add-L: O(1) (O(n)?)
 *Pop-L: O(n)
 Pop-R: O(1)
 
