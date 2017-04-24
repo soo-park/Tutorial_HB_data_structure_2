@@ -99,11 +99,11 @@ def num_nodes(tree):
 
     if not tree:
         return 0
-
-    for item in tree.children:
-        count = 1 + num_nodes(item)
-
-    return count
+    else:
+        count = 1
+        for item in tree.children:
+            count += num_nodes(item)
+        return count
 
 
 # #####################################################################
